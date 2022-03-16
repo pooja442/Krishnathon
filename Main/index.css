@@ -78,8 +78,43 @@ nav img{
 nav .fa{
     display:none;
 } 
+
+/* Middle Map Section Style */
+
+.grid-container1{
+    padding: 2%;
+    display:grid;
+    gap: 30px;
+    grid-template-columns:auto auto;
+}
+.grid-container2{
+    gap: 20px;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+.grid-item{
+    width:170px;
+    height:130px;
+    border:1px solid black;
+    text-align:center;
+}
+
+.grid-item img{
+    height: 80%;
+    width: 90%;
+    margin-bottom: 2px;
+}
+.recentNews{
+    text-align: center;
+    border:1px solid black;
+    width:300px;
+    height: 480px;
+}
+
 /* media querry for small devices */
-@media(max-width:750px){
+@media(max-width:480px){
     .text-box pre{
         font-size:15px;
     }
@@ -106,5 +141,27 @@ nav .fa{
     }
     .nav-links ul{
         padding:30px;
+    }
+
+    /* State Map responsiveness */
+
+    .grid-container1{
+        grid-template-columns: auto;
+        margin: 10px;
+    }
+
+    .grid-container2{
+        grid-template-columns: auto auto;
+        gap: 15px;
+        margin-left: 10px;
+     }
+
+     .grid-item{
+         height: 110px;
+         width: 150px;
+     }
+
+    .recentNews{
+        display: none;
     }
 }

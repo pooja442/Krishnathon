@@ -81,7 +81,44 @@ nav img{
     color:rgb(179, 162, 162);
     font-size: 30px;
 }
-@media(max-width:750px){
+
+
+/* Middle Map Section Style */
+
+.grid-container1{
+    margin: 2%;
+    display:grid;
+    gap: 0;
+    grid-template-columns:auto auto;
+}
+.grid-container2{
+    gap: 20px;
+    width: 85%;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+.grid-item{
+    width:170px;
+    height:130px;
+    border:1px solid black;
+    text-align:center;
+}
+
+.grid-item img{
+    height: 80%;
+    width: 90%;
+    margin-bottom: 2px;
+}
+.recentNews{
+    text-align: center;
+    border:1px solid black;
+    width:220px;
+    height:320px;
+}
+
+@media(max-width:490px){
     .text-box pre{
         font-size:15px;
     }
@@ -97,5 +134,22 @@ nav img{
         right:0;
         text-align:left;
         z-index:2;
+    } 
+    
+    .grid-container1{
+        grid-template-columns: auto;
+    }
+
+    .grid-container2{
+        grid-template-columns: auto auto;
+    }
+
+    .grid-item{
+        height: 150px;
+        width: 130px;
+    }
+    .recentNews{
+        display: none;
     }
 }
+
