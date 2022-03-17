@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 *{
     margin:0;
     padding:0;
@@ -78,7 +79,22 @@ nav img{
 nav .fa{
     display:none;
 } 
-
+/* Quote Section */
+.quote-section{
+    margin:auto;
+    padding:100px;
+    width:80%;
+    text-align:center;
+}
+.quote-section h2{
+    color:#080303;
+    text-decoration:underline;
+    text-decoration-color: #D6D6D6;
+}
+.quote-section p{
+    font-family: 'Patrick Hand', cursive;;
+    font-size:20px;
+}
 /* Middle Map Section Style */
 
 .grid-container1{
@@ -162,6 +178,9 @@ nav .fa{
      }
 
     .recentNews{
-        display: none;
+        display: block;
+        width:100%;
+        overflow:auto;
+        overflow-x:hidden;
     }
 }
