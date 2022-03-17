@@ -102,6 +102,7 @@ nav .fa{
     display:grid;
     gap: 30px;
     grid-template-columns:auto auto;
+    background-color:#D6D6D6;
 }
 .grid-container2{
     gap: 20px;
